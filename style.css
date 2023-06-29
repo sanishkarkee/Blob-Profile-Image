@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  font-family: Poppins, sans-serif;
+  position: relative;
+}
+
+#home.hero {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+#home .container {
+  margin: 0 auto;
+  max-width: 107rem;
+  padding: 0 4rem;
+}
+#home .container .content {
+  align-items: center;
+  display: flex;
+  gap: 10rem;
+  height: 65rem;
+  justify-content: center;
+  position: relative;
+}
+#home .container .content .hero-main {
+  align-items: center;
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  position: relative;
+}
+#home .container .content .hero-main .hero-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  position: relative;
+}
+#home .container .content .hero-main .hero-text h1 {
+  color: #2d2e32;
+  font-size: 5.5rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+#home .container .content .hero-main .hero-text img {
+  height: 6rem;
+  position: absolute;
+  right: 13rem;
+  top: 8.7rem;
+  width: 6rem;
+}
+#home .container .content .hero-main .hero-text p {
+  color: #555;
+  font-family: Mulish, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+#home .container .content .hero-main .hero-text span {
+  cursor: pointer;
+  display: flex;
+  gap: 1.3rem;
+  margin: 2.5rem 0;
+}
+#home .container .content .hero-main .hero-text span a {
+  color: #2d2e32;
+  font-size: 3rem;
+}
+#home .container .content .hero-main .hero-text span a i {
+  transition: all 0.2s;
+}
+#home .container .content .hero-main .hero-text span a i:hover {
+  color: #147efb;
+}
+#home .container .content .hero-main .hero-img {
+  animation: morph 8s ease-in-out infinite;
+  background-image: url(https://stefantopalovicdev.vercel.app/static/media/pfp_webp.f334283842f7b24cafd1.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #2d2e32;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  height: 35rem;
+  position: relative;
+  transition: all 1s ease-in-out;
+  width: 35rem;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  to {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}/*# sourceMappingURL=style.css.map */
